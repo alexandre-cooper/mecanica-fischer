@@ -108,16 +108,43 @@ header nav ul li a{
   font-size: 25px;
 }
 /* Estilo seção SOBRE */
-.sobre h1 {
-  padding: 60px 20px;
+.sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.container-sobre {
+.container-servicos {
+  
+}
+.container-servicos h5{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+.icons-servicos{
+  width: 100px;
+}
 
-}
+/* Estilo seção DICAS  */
 .dicas {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.contato-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 95%;
+  height: 60%;
+  background: rgb(165,26,235);
+  background: linear-gradient(90deg, rgba(165,26,235,1) 0%, rgba(26,3,196,1) 100%);
 }
 .contato {
   display: flex;
@@ -126,6 +153,21 @@ header nav ul li a{
   justify-content: center;
 }
 .contato h1{
-  color: #139730;
+  color: #FFF;
   font-size: 40px;
+  text-align: center;
+}
+.contato h3{
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  color: #FFF;
+}
+.contatos-links-sociais{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+  background-color: #FFF;
+
 }
