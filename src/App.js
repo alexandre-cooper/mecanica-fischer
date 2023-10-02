@@ -1,4 +1,5 @@
 import React from "react";
+import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 import logo from '../src/assets/logo.png';
 import motorIcon from '../src/assets/icons/motor-svgrepo-com.svg';
 import { BsFillArrowUpSquareFill, BsInstagram, BsWhatsapp } from 'react-icons/bs';
@@ -86,28 +87,31 @@ export default function App(){
 
       <section className="dicas" id="dicas">
         <div className="dicas-container">
+        <div>
         <h1>Você sabia?</h1>
-        <h2>Quando um carro deve ser reparado?</h2>
-        <h3>Existem várias categorias de diagnósticos e reparos de veículos que precisam ser realizados em determinadas situações:</h3>
-        <p>
-        1. Reparação e diagnóstico de serralheria. Essas medidas são realizadas quando são detectadas avarias decorrentes do desgaste de peças e se manifestam por batidas, sons incomuns, fluxos de líquidos, folgas entre componentes ou alterações na controlabilidade do veículo.
-        </p>
-        <p>
-        2. Reparo atual ao comprar um carro usado ou antes de uma viagem.
-        </p>
-        <p>
-          3. Inspeção e manutenção sazonais. Antes do início da estação fria ou quente, é necessário trocar os pneus, atualizar o fluido e realizar diagnósticos dos mecanismos.
-        </p>
-        <p>
-        4. Reparação de carroçarias para mossas ou riscos na carroçaria para devolver um aspeto apresentável e completo ao veículo. 
-        </p>
-        <p>
+        </div>
+        <Accordion>
+        <AccordionItem header="Quando um carro deve ser reparado?">
+        Existem várias categorias de diagnósticos e reparos de veículos que precisam ser realizados em determinadas situações. Veja exemplos abaixos:
+        </AccordionItem>
+
+        <AccordionItem header="Reparação e diagnóstico de serralheria.">
+        Essas medidas são realizadas quando são detectadas avarias decorrentes do desgaste de peças e se manifestam por batidas, sons incomuns, fluxos de líquidos, folgas entre componentes ou alterações na controlabilidade do veículo.
+        </AccordionItem>
+
+        <AccordionItem header="Inspeção e manutenção sazonais">
+        Antes do início da estação fria ou quente, é necessário trocar os pneus, atualizar o fluido e realizar diagnósticos dos mecanismos.
+        </AccordionItem>
+        <AccordionItem header="Pensando em viajar ou comprar um carro novo?">
+        Ao efetuar a compra de um carro ou estiver planejando uma viagem, você precisa realizar toda uma revisão do mesmo, existe compoentes que podem ser cruciais para previnir acidentes e prejuizos no veicúlo.
+        </AccordionItem>
+        <AccordionItem header="Inspeção e manutenção sazonais">
+        Reparação de carroçarias para mossas ou riscos na carroçaria para devolver um aspeto apresentável e completo ao veículo. 
+        </AccordionItem>
+        <AccordionItem header="Inspeção e manutenção sazonais">
         Isso está longe de ser uma lista completa de diagnósticos de carros. Se não houver avarias visíveis ou sintomas de mau funcionamento, recomenda-se a manutenção programada anualmente ou a cada 10-15 km. quilometragem Isso permitirá que você mantenha o desempenho da máquina e detecte possíveis defeitos nos estágios iniciais.
-        </p>
-        <h1>O custo do trabalho de diagnóstico e reparo do carro</h1>
-        <p>
-        Ao escolher um serviço de carro, um fator importante é o custo de manutenção do carro. Ao mesmo tempo, é importante que o diagnóstico e o reparo dos carros não sejam tão baratos quanto com tarifas transparentes. Se toda a lista de preços com tipos individuais de trabalho e serviços complexos estiver escrita no site, isso indica que a empresa é honesta com você e se preocupa. Assim o cliente saberá qual o valor a navegar no que diz respeito às medidas necessárias. No serviço de carros Wegarstol, todos os preços dos serviços de reparo estão detalhados na tabela abaixo. Você também pode visitar uma página separada "
-        </p>
+        </AccordionItem>      
+        </Accordion>        
         </div>
       </section>
       
