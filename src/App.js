@@ -90,7 +90,7 @@ export default function App(){
         <div>
         <h1>Você sabia?</h1>
         </div>
-        <Accordion>
+        <Accordion className="accordion">
         <AccordionItem header="Quando um carro deve ser reparado?">
         Existem várias categorias de diagnósticos e reparos de veículos que precisam ser realizados em determinadas situações. Veja exemplos abaixos:
         </AccordionItem>
