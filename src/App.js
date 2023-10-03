@@ -140,7 +140,7 @@ export default function App(){
         </div>
       </section>
       <footer>
-      Copyright © Alexandre Brasil 2023
+      <p>Copyright © Alexandre Brasil 2023</p>
       <a className="botao-topo" href="#home"><BsFillArrowUpSquareFill size={30}/> Voltar ao topo </a>
       </footer>
     </div>
