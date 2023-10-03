@@ -24,7 +24,7 @@ export default function App(){
       <label for='close-menu' className="close-menu-label" title="close-menu" ></label>
       <header>
         <nav>
-          <h1> <img width={60} src={logo} /> </h1>
+          <h1> <img className="logo" src={logo} /> </h1>
           <ul onClick={recolherMenu}>
             <li> <a href="#home">Home</a> </li>
             <li> <a href="#sobre">Sobre</a> </li>
