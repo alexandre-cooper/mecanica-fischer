@@ -134,7 +134,7 @@ export default function App(){
         <button>Enviar</button>
         </div>
         <div className="contatos-links-sociais">
-          <a href="https://wa.me/65992792383" target="_blank"> <BsWhatsapp size={30}/> </a>
+          <a href="https://wa.me/65993053421" target="_blank"> <BsWhatsapp size={30}/> </a>
           <a href="https://www.instagram.com/gugamecanico/" target="_blank"> <BsInstagram size={30}/> </a>
         </div>
         </div>
