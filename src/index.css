@@ -78,7 +78,7 @@ header nav ul li a{
   header nav{
     display: flex;
     flex-direction: column;
-    background-color: #000000c0;
+    background-color: #000000de;
     filter: blur(2);
     height: 100%;
     justify-content: center;
@@ -87,12 +87,20 @@ header nav ul li a{
   header nav ul{
     display: flex;
     flex-direction: column;
-    background-color: #2B2776;
+    
   }
   header nav ul li a{
-    color: #000;
-    padding-left: 20px;
+    display: flex;
+    border-radius: 5px;
+    margin: 10px;
+    color: #FFF;
     text-decoration: none;
+    background-color: #2B2776;
+    width: 200px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
   }
   .close-menu-label::after{
     content: '☰';
