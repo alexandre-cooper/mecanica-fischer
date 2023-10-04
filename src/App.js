@@ -1,6 +1,6 @@
 import React from "react";
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
-import logo from '../src/assets/logo.png';
+import logo from '../src/assets/logo-guga.png';
 import motorIcon from '../src/assets/icons/motor-svgrepo-com.svg';
 import { BsFillArrowUpSquareFill, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import carMecanico from '../src/assets/undraw_automobile_repair_ywci.svg';
