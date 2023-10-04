@@ -1,5 +1,5 @@
-import React from "react";
-import { Accordion, AccordionItem } from '@szhsin/react-accordion';
+import React, { useState } from "react";
+import MenuExpansivel from '../src/components/Accordion';
 import logo from '../src/assets/logo-guga.png';
 import motorIcon from '../src/assets/icons/motor-svgrepo-com.svg';
 import { BsFillArrowUpSquareFill, BsInstagram, BsWhatsapp } from 'react-icons/bs';
@@ -15,6 +15,12 @@ import freio from '../src/assets/icons/freios.png';
 
 
 export default function App(){
+
+  
+
+  function handleSubmit(){
+    alert('Ts')
+  }
   function recolherMenu(){
     document.getElementById('close-menu').checked=false;
   }
@@ -90,49 +96,24 @@ export default function App(){
         <div>
         <h1>Você sabia?</h1>
         </div>
-        <Accordion className="accordion">
-        <AccordionItem header="Quando um carro deve ser reparado?">
-        Existem várias categorias de diagnósticos e reparos de veículos que precisam ser realizados em determinadas situações. Veja exemplos abaixos:
-        </AccordionItem>
-
-        <AccordionItem header="Reparação e diagnóstico de serralheria.">
-        Essas medidas são realizadas quando são detectadas avarias decorrentes do desgaste de peças e se manifestam por batidas, sons incomuns, fluxos de líquidos, folgas entre componentes ou alterações na controlabilidade do veículo.
-        </AccordionItem>
-
-        <AccordionItem header="Inspeção e manutenção sazonais">
-        Antes do início da estação fria ou quente, é necessário trocar os pneus, atualizar o fluido e realizar diagnósticos dos mecanismos.
-        </AccordionItem>
-        <AccordionItem header="Pensando em viajar ou comprar um carro novo?">
-        Ao efetuar a compra de um carro ou estiver planejando uma viagem, você precisa realizar toda uma revisão do mesmo, existe compoentes que podem ser cruciais para previnir acidentes e prejuizos no veicúlo.
-        </AccordionItem>
-        <AccordionItem header="Inspeção e manutenção sazonais">
-        Reparação de carroçarias para mossas ou riscos na carroçaria para devolver um aspeto apresentável e completo ao veículo. 
-        </AccordionItem>
-        <AccordionItem header="Inspeção e manutenção sazonais">
-        Isso está longe de ser uma lista completa de diagnósticos de carros. Se não houver avarias visíveis ou sintomas de mau funcionamento, recomenda-se a manutenção programada anualmente ou a cada 10-15 km. quilometragem Isso permitirá que você mantenha o desempenho da máquina e detecte possíveis defeitos nos estágios iniciais.
-        </AccordionItem>      
-        </Accordion>        
-        </div>
+          <div className="container-menu-expansivel">
+          <MenuExpansivel /> </div> 
+          </div>
       </section>
       
       <section className="contato" id="contato">
         
-        <div className="contato-container">
+        <div className="contato-container" id="contatoForm" method="get" action="mailto:teste@mail.com" target="_blank">
         <h1>Fale Conosco!</h1>
         <h3>
         Se você tem alguma dúvida, sugestão, reclamação ou consideração, preencha o formulário abaixo que teremos o maior prazer de falar com você.
         </h3>
-        <div className="container-inputs">
-        <input
-        placeholder="Digite seu nome..." />
-        <input
-        placeholder="Digite seu nome..." />
-        <input 
-        placeholder="Digite seu nome..." />
-        <textarea
-        placeholder="Mensagem..."/>
-        <button>Enviar</button>
-        </div>
+        <form className="container-inputs">
+        <input type="text" id="nome" name="nome" placeholder="nome..." ></input>
+        <input type="text" id="contato" name="contato" placeholder="digite seu email..." ></input>
+        <textarea name="descricao" id="descricao" ></textarea>
+        <button type="submit" value="click" id="enviar">Enviar</button>
+        </form>
         <div className="contatos-links-sociais">
           <a href="https://wa.me/65993053421" target="_blank"> <BsWhatsapp size={30}/> </a>
           <a href="https://www.instagram.com/gugamecanico/" target="_blank"> <BsInstagram size={30}/> </a>
